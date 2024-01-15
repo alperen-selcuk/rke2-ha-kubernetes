@@ -2,6 +2,14 @@
 
 ## pre-req
 
+### nginx stream module
+
+this nginx configuration need stream module on nginx so you can follow this instructions:
+
+
+
+### all nodes configurations
+
 ```
 systemctl disable apparmor.service
 systemctl disable firewalld.service
@@ -12,7 +20,7 @@ systemctl disable swap.target
 swapoff -a
 ```
 
-## master nodes
+### master nodes
 
 ```
 mkdir -p /etc/rancher/rke2/
