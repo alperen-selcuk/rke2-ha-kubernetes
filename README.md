@@ -75,3 +75,18 @@ systemctl enable rke2-server.service
 systemctl start rke2-server.service
 ```
 
+#### worker nodes
+
+```
+cat<<EOF|tee /etc/rancher/rke/config.yaml
+server: https://YOUR-FIRST-MASTER-IP:9345
+token: rancher-token2024
+```
+
+after again you must install rke2 and servis start
+
+```
+curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE="agent" sh -
+systemctl enable rke2-server.service
+systemctl start rke2-server.service
+```
