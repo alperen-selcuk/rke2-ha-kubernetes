@@ -6,6 +6,7 @@
 
 this nginx configuration need stream module on nginx so you can follow this instructions:
 
+https://github.com/alperen-selcuk/nginx-stream-install
 
 
 ### all nodes configurations
