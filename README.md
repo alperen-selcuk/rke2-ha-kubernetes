@@ -1,5 +1,7 @@
 # rke2-ha-kubernetes
 
+
+
 ## pre-req
 
 ### nginx stream module
@@ -75,6 +77,15 @@ systemctl enable rke2-server.service
 systemctl start rke2-server.service
 ```
 
+ you can find kubeconfig in rke directory. you can export kubeconfig or type with kubectl. both works.
+
+```
+kubectl --kubeconfig /etc/rancher/rke2/rke2.yaml get nodes
+
+export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
+kubectl get nodes
+```
+
 #### worker nodes
 
 ```
@@ -90,3 +101,4 @@ curl -sfL https://get.rke2.io | INSTALL_RKE2_TYPE="agent" sh -
 systemctl enable rke2-server.service
 systemctl start rke2-server.service
 ```
+
