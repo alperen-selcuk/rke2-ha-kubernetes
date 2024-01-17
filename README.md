@@ -1,5 +1,6 @@
 # rke2-ha-kubernetes
 
+![image](https://github.com/alperen-selcuk/rke2-ha-kubernetes/assets/78741582/88b2cdd7-ee6b-4eb3-9d4a-f102c849aef3)
 
 
 ## pre-req
